@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppAdivinaCuadros">
         <activity
+            android:name=".ActivityAcercaDe"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityLista"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityJuego"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
