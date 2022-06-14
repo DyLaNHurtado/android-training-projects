@@ -67,13 +67,13 @@ public class MainActivity extends AppCompatActivity {
     private void cargarListas() {
 
         recyclerViewCasa = findViewById(R.id.recyclerCasa);
-        layoutCasaManager = new LinearLayoutManager(recyclerViewCasa.getContext(), LinearLayoutManager.HORIZONTAL, false);
+        layoutCasaManager = new LinearLayoutManager(recyclerViewCasa.getContext(), LinearLayoutManager.VERTICAL, false);
         recyclerViewCasa.setLayoutManager(layoutCasaManager);
         recyclerCasaAdapter = new CasaAdapter(casaList, getApplicationContext(), clickListener);
         recyclerViewCasa.setAdapter(recyclerCasaAdapter);
 
         recyclerViewUbi = findViewById(R.id.recyclerUbi);
-        layoutUbiManager = new LinearLayoutManager(recyclerViewUbi.getContext(), LinearLayoutManager.VERTICAL, false);
+        layoutUbiManager = new LinearLayoutManager(recyclerViewUbi.getContext(), LinearLayoutManager.HORIZONTAL, false);
         recyclerViewUbi.setLayoutManager(layoutUbiManager);
         recyclerUbicacionAdapter = new UbicacionAdapter(ubicacionList, getApplicationContext(), clickListener2);
         recyclerViewUbi.setAdapter(recyclerUbicacionAdapter);

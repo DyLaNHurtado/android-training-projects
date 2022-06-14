@@ -11,10 +11,12 @@
         android:theme="@style/Theme.AppVacaciones">
         <activity
             android:name=".DetalleUbicacionActivity"
-            android:exported="false" />
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".DetalleCasaActivity"
-            android:exported="false" />
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
