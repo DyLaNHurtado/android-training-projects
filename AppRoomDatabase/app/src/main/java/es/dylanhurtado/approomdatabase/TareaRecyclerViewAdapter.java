@@ -13,14 +13,9 @@ import android.widget.Toast;
 
 import es.dylanhurtado.approomdatabase.db.RoomDB;
 import es.dylanhurtado.approomdatabase.db.TareaEntity;
-import es.dylanhurtado.approomdatabase.placeholder.PlaceholderContent.PlaceholderItem;
 
 import java.util.List;
 
-/**
- * {@link RecyclerView.Adapter} that can display a {@link PlaceholderItem}.
- * TODO: Replace the implementation with code for your data type.
- */
 public class TareaRecyclerViewAdapter extends RecyclerView.Adapter<TareaRecyclerViewAdapter.ViewHolder> {
 
     private List<TareaEntity> tareaEntityList;
