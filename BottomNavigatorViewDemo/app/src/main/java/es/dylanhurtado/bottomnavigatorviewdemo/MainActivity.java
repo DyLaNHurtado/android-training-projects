@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
     // Metodo que enlaca los componentes de la vista
     private void enlazarComponentes(){
         bottomNavigationView = findViewById(R.id.botNavView);
+        bottomNavigationView.setSelectedItemId(R.id.menu_2 );
     }
 
     // Metodo que reemplaza los fragmentos en el FrameLayout creado
