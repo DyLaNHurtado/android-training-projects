@@ -11,13 +11,16 @@
         android:theme="@style/Theme.AppAdivinaCuadros">
         <activity
             android:name=".ActivityAcercaDe"
-            android:exported="false" />
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".ActivityLista"
-            android:exported="false" />
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".ActivityJuego"
-            android:exported="false" />
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
