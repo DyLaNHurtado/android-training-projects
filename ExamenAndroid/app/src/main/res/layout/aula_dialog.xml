@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="370dp"
+                                                   android:layout_height="wrap_content">
+
+    <TextView
+            android:text="Add new Aula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="24dp" android:textSize="24sp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Lunes"
+            android:ems="10"
+            android:id="@+id/edDia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" android:minHeight="48dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="17:25"
+            android:ems="10"
+            android:id="@+id/edHora"
+            android:layout_marginTop="47dp"
+            app:layout_constraintTop_toBottomOf="@+id/edDia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:minHeight="48dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Modulo"
+            android:ems="10"
+            android:id="@+id/edModulo"
+            android:layout_marginTop="58dp"
+            app:layout_constraintTop_toBottomOf="@+id/edHora"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:minHeight="48dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Aula"
+            android:ems="10"
+            android:id="@+id/edAula"
+            android:layout_marginTop="55dp"
+            app:layout_constraintTop_toBottomOf="@+id/edModulo"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:minHeight="48dp"/>
+    <Button
+            android:text="Add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/addButtonDialog"
+            android:layout_marginTop="71dp"
+            app:layout_constraintTop_toBottomOf="@+id/edAula"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

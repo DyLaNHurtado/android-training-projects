@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".fragments.ListaAulaFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <Button
+                android:text="Back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/backButtonListaAula"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="387dp"
+                android:layout_height="489dp" android:id="@+id/rv"
+                app:layout_constraintTop_toBottomOf="@+id/backButtonListaAula"
+                app:layout_constraintBottom_toTopOf="@+id/fabListaAula"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:src="@android:drawable/ic_input_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true" android:id="@+id/fabListaAula"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="16dp" android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent" tools:ignore="SpeakableTextPresentCheck"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

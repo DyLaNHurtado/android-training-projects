@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/menuLunes"
+            android:icon="@drawable/ic_android_black_24dp"
+            android:title="Lunes"
+            app:showAsAction="ifRoom" />
+    <item
+            android:id="@+id/menuMartes"
+            android:icon="@drawable/ic_android_black_24dp"
+            android:title="Martes"
+            app:showAsAction="ifRoom" />
+    <item
+            android:id="@+id/menuMiercoles"
+            android:icon="@drawable/ic_android_black_24dp"
+            android:title="Miercoles"
+            app:showAsAction="ifRoom" />
+    <item
+            android:id="@+id/menuJueves"
+            android:icon="@drawable/ic_android_black_24dp"
+            android:title="Jueves"
+            app:showAsAction="ifRoom" />
+    <item
+            android:id="@+id/menuViernes"
+            android:icon="@drawable/ic_android_black_24dp"
+            android:title="Viernes"
+            app:showAsAction="ifRoom" />
+</menu>
